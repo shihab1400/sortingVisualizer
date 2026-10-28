@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+      <link rel="stylesheet" href="styles.css" />
+      <script src="https://kit.fontawesome.com/ba840886f5.js" crossorigin="anonymous"></script>
+      <title>Sorting Visualizer</title>
+   </head>
+   <body>
+      <div class="slide-container">
+         <div class="speed-control-container">
+            <p>Slower</p>
+            <input
+               type="range"
+               min="1"
+               max="100"
+               value="50"
+               class="slider"
+               id="speed-controller"
+               title="Speed Controller"
+            />
+            <p>Faster</p>
+         </div>
+         <div class="bar-control-container">
+            <p>Less</p>
+            <input
+               type="range"
+               min="15"
+               max="60"
+               value="50"
+               class="slider"
+               id="bar-controller"
+               title="Bars Number Controller"
+            />
+            <p>More</p>
+         </div>
+      </div>
+      <div class="btn-container">
+         <button class="btn bubble-sort">Bubble Sort</button>
+         <button class="btn selection-sort">Selection Sort</button>
+         <button class="btn insertion-sort">Insertion Sort</button>
+         <button class="btn merge-sort">Merge Sort</button>
+         <button class="btn quick-sort">Quick Sort</button>
+         <button class="btn btn-unsort">Unsort</button>
+         <button class="btn btn-sound">Sound: On</button>
+      </div>
+      <div class="bar-container"></div>
+
+      <script src="index.js"></script>
+   </body>
+</html>
